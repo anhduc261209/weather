@@ -20,7 +20,7 @@ function displayWeather() {
     const weatherOptions = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': 'd3c5dbe6ccmsh37d38169379cda7p1d66a8jsn4f5b8d97ed41',
+            'X-RapidAPI-Key': weatherAPIKey,
             'X-RapidAPI-Host': 'weatherbit-v1-mashape.p.rapidapi.com'
         }
     };
