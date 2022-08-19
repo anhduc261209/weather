@@ -16,6 +16,7 @@ function checkValid(address) {
 function displayWeather() {
     let address = addressElem.value;
     if (!checkValid(address)) return;
+    document.getElementById('result-div').style.visibility = 'hidden';
     const weatherOptions = {
         method: 'GET',
         headers: {
@@ -45,6 +46,7 @@ function displayWeather() {
             temperature = data.data[0].temp;
             document.getElementById('weather-text').innerHTML = `${temperature}°C\n${weatherDescription}`;
             icon.src = `https://www.weatherbit.io/static/img/icons/${weatherIcon}.png`;
+            document.getElementById('result-div').style.visibility = 'visible';
         })
     })
 }
