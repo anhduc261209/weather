@@ -1,0 +1,24 @@
+.weather-div {
+    border-radius: 4px;
+    margin-top: 30px;
+    padding-left: 200px;
+    
+    padding-right: 200px;
+    padding-top: 10px;
+}
+
+#result-div {
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#cityLabel {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#getBtn {
+    float: right;
+    margin-top: 20px;
+}
